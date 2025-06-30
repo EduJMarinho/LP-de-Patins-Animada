@@ -48,7 +48,6 @@ section.hero {
         display: flex;
         align-items: center;
         gap: .75rem;
-
         border-radius: 5rem;
         transition: scale 350ms;
 
@@ -64,6 +63,7 @@ section.hero {
           border-radius: 50%;
           background-color: white;
         }
+
         &:hover {
           scale: 1.1; /* para alguns navegadore pode não funcionar, dai usamos = transform: scale(1.1) */
         }
@@ -108,7 +108,6 @@ section.hero {
 
        & img[src*="patins"] {
         z-index: 1;
-
         transform: translateX(200%); 
         animation: slideIn 3s ease forwards; 
        }
@@ -117,7 +116,6 @@ section.hero {
         max-width: 5.5rem;
         top: 30%;
         z-index: 0;
-
         opacity: 0;
         transform: translateX(400%);
         animation: slideIn 2s 800ms ease both, appear 100ms 800ms both;
@@ -127,7 +125,6 @@ section.hero {
         max-width: 2.5rem;
         right: 0;
         bottom: 35%; 
-
         transform: translateX(400%);
         animation: slideIn 2.2s 800ms ease both;
        }
@@ -158,15 +155,12 @@ section.hero {
       23% {
        transform: translateY(calc(-5rem - 15px));
       }
-
       25% {
        transform: translateY(calc(-5rem + 10px));
       }
-
       27% { 
        transform: translateY(calc(-5rem - 7px));
       }
-
       29% {
        transform: translateY(calc(-5rem + 7px));
       }
